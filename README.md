@@ -10,12 +10,11 @@ Please create xyc datasets first using make_xyc_dataset.py file to run the 'main
 This repository is organised as follows:
 
 ```
-├── dataset.py/              <XYC dataset loader> 
+├── dataset.py              <XYC dataset loader> 
 ├── make_xyc_dataset.py           <To creat the XYC dataset>
-├── main.py/                 <Implementing the code> 
-├── model.py/               <DAE model architecture> 
-├── plot.py/               <Plotting latent traversals and latent space> 
-└── sl
+├── main.py                 <Implementing the code> 
+├── model.py               <DAE model architecture> 
+└── plot.py               <Plotting latent traversals and latent space> 
 ```
 
 
