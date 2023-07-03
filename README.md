@@ -16,7 +16,7 @@ This repository is organised as follows:
 ├── model.py/               <DAE model architecture> 
 ├── plot.py/               <Plotting latent traversals and latent space> 
 └── sl
-
+```
 
 
 
