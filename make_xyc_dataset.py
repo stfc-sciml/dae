@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Tue May 23 13:53:54 2023
-
-@author: pearl025
+Created on Tue May 23 2023
 """
 import os
 import numpy as np
@@ -21,7 +19,7 @@ def circle(img, center, radius, color):
 
     in_circle = np.where(np.linalg.norm(coords-center, axis = -1) < radius)[0]
     img[coords[in_circle].astype(np.uint8)[:,0], coords[in_circle].astype(np.uint8)[:,1]] = color
-    
+
     return img
 
 
@@ -47,6 +45,6 @@ dataset_folder_name = 'datasets'
 try:
     os.mkdir(dataset_folder_name)
 except OSError:
-    pass 
+    pass
 
 np.savez(os.path.join(dataset_folder_name, 'xyc.npz'), imgs = datasets, labs = labels)
